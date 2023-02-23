@@ -12,9 +12,9 @@
 配置序列：  
 a) mmdetection/mmdet/models/losses/  训练损失(loss)  
 
-focal_loss.py  [注册定义了FocalLoss的@LOSSES.register_module()]  
-smooth_l1_loss.py  [注册定义了L1 loss、SmoothL1Loss等@LOSSES.register_module()]  
-iou_loss.py  [注册定义了GIoULoss、IoULoss、BoundedIoULoss等@LOSSES.register_module()]  
+focal_loss.py---[注册定义了FocalLoss的@LOSSES.register_module()]  
+smooth_l1_loss.py---[注册定义了L1 loss、SmoothL1Loss等@LOSSES.register_module()]  
+iou_loss.py---[注册定义了GIoULoss、IoULoss、BoundedIoULoss等@LOSSES.register_module()]  
 ...  
 
 # 2)model配置中的train_cfg中的assigner的cls_cost、reg_cost、iou_cost  
@@ -27,11 +27,11 @@ iou_loss.py  [注册定义了GIoULoss、IoULoss、BoundedIoULoss等@LOSSES.regis
 
 配置序列：  
 a) mmdetection/mmdet/core/bbox/match_costs/  匹配损失(match cost)  
-match_cost.py  [注册定义了BBoxL1Cost、FocalLossCost、ClassificationCost、IoUCost等MATCH_COST.register_module()]  
-builder.py  [定义了build_match_cost(cfg, MATCH_COST, default_args)函数构建cost]  
+match_cost.py---[注册定义了BBoxL1Cost、FocalLossCost、ClassificationCost、IoUCost等MATCH_COST.register_module()]  
+builder.py---[定义了build_match_cost(cfg, MATCH_COST, default_args)函数构建cost]  
 
 b) mmdetection/mmdet/core/bbox/assigners/  分配器(assigner)  
-hungarian_assigner.py  [注册定义了HungarianAssigner的BBOX_ASSIGNERS.register_module()]  
+hungarian_assigner.py---[注册定义了HungarianAssigner的BBOX_ASSIGNERS.register_module()]  
 approx_max_iou_assigner.py
 mask_hungarian_assigner.py
 ...  
