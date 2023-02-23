@@ -1,5 +1,8 @@
 # 配置文件中的loss
-# 1)model配置中的loss_cls、loss_bbox、loss_iou  
+# 1)model配置中的bbox_head中的loss_cls、loss_bbox、loss_iou  
+    bbox_head=dict(
+        type='DeformableDETRHead',
+        ...
         loss_cls=dict(
             type='FocalLoss',
             use_sigmoid=True,
@@ -7,7 +10,8 @@
             alpha=0.25,
             loss_weight=2.0),
         loss_bbox=dict(type='L1Loss', loss_weight=5.0),
-        loss_iou=dict(type='GIoULoss', loss_weight=2.0)),
+        loss_iou=dict(type='GIoULoss', loss_weight=2.0))
+
 
 配置序列：  
 a) mmdetection/mmdet/models/losses/  训练损失(loss)  
