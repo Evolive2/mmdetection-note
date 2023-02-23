@@ -32,6 +32,6 @@ builder.py---[定义了build_match_cost(cfg, MATCH_COST, default_args)函数构�
 
 b) mmdetection/mmdet/core/bbox/assigners/  分配器(assigner)  
 hungarian_assigner.py---[注册定义了HungarianAssigner的BBOX_ASSIGNERS.register_module()]  
-approx_max_iou_assigner.py
-mask_hungarian_assigner.py
+approx_max_iou_assigner.py  
+mask_hungarian_assigner.py  
 ...  
