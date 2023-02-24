@@ -19,7 +19,7 @@
 A) focal_loss.py---[注册定义了FocalLoss的@LOSSES.register_module()]  
 B) smooth_l1_loss.py---[注册定义了L1 loss、SmoothL1Loss等@LOSSES.register_module()]  
 C) iou_loss.py---[注册定义了GIoULoss、IoULoss、BoundedIoULoss等@LOSSES.register_module()]  
-IOU计算函数位于mmdetection/mmdet/core/bbox/iou_calculators/iou2d_calculator.py/中的def bbox_overlaps(bboxes1, bboxes2, mode='iou', is_aligned=False, eps=1e-6)
+IOU计算函数位于mmdetection/mmdet/core/bbox/iou_calculators/iou2d_calculator.py/中的def bbox_overlaps(bboxes1, bboxes2, mode='iou', is_aligned=False, eps=1e-6)  
 ...  
 
 ## 1. model配置中的train_cfg中的assigner的cls_cost、reg_cost、iou_cost  
